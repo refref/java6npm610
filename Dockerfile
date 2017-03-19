@@ -6,3 +6,5 @@ RUN yum -y install java-1.7.0-openjdk-devel.x86_64 wget freetype fontconfig open
 	sh -c "echo export JAVA_HOME=/etc/alternatives/java_sdk >> /etc/environment" 
 	
 RUN echo export JAVA_HOME=/etc/alternatives/java_sdk >> /etc/bashrc
+
+RUN npm i -g npm-cache-install
